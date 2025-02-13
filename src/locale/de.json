@@ -1,0 +1,16 @@
+{
+	"translation": {
+		"search": "Suchen",
+		"search-stocks": "Aktiensuche",
+		"fundamentals": "Fundamentaldaten",
+		"dividends": "Dividenden",
+		"overview": "Übersicht",
+		"indicators": "Indikatoren",
+		"disclaimer-header":"Disclaimer für die Nutzung von Ascentrade",
+		"disclaimer-body1":"Die Nutzung dieser App sowie alle damit verbundenen Finanztransaktionen und Investmententscheidungen sind mit Risiken verbunden. Die Inhalte und Funktionen der App dienen ausschließlich Informations- und Bildungszwecken und stellen keine individuelle Finanz-, Anlage- oder Steuerberatung dar. Entscheidungen im Bereich Trading oder Investment erfolgen auf eigene Verantwortung. Es wird empfohlen, bei Unsicherheiten eine unabhängige Finanzberatung in Anspruch zu nehmen.",
+		"disclaimer-body2":"Bitte beachten Sie, dass der Handel mit Finanzinstrumenten wie Aktien, Kryptowährungen, Derivaten oder anderen Wertpapieren erhebliche Risiken birgt. Dazu zählen Marktschwankungen, Liquiditätsprobleme und der mögliche Verlust des gesamten eingesetzten Kapitals. Eine vergangene Wertentwicklung garantiert keine zukünftigen Ergebnisse.",
+		"disclaimer-body3":"Obwohl wir uns bemühen, genaue und aktuelle Informationen bereitzustellen, können wir die Vollständigkeit, Richtigkeit und Fehlerfreiheit der Daten oder Analysen in der App nicht garantieren. Zudem können technische oder betriebliche Einschränkungen die Nutzung und Entscheidungsfindung beeinträchtigen.",
+		"disclaimer-body4":"Die Verantwortung für die Nutzung der App und die daraus resultierenden Entscheidungen liegt ausschließlich beim Nutzer. Der Anbieter der App übernimmt keine Haftung für finanzielle Verluste oder Schäden, die durch die Nutzung oder eine mögliche Fehlfunktion der App entstehen. Bitte handeln Sie stets verantwortungsbewusst und informieren Sie sich umfassend, bevor Sie Finanzentscheidungen treffen.",
+		"disclaimer-ack":"Ich verstehe die Risiken"
+	}
+}
