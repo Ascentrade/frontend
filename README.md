@@ -16,6 +16,10 @@ npm install
 npm run dev
 ```
 
+## Contributing
+
+We encourage public contributions! Please review [CONTRIBUTING.md](https://github.com/Ascentrade/docs/blob/main/CONTRIBUTING.md) for details.
+
 ## License
 
 <p align="center">
