@@ -9,7 +9,7 @@ This is the [Vite](https://vitejs.dev) powered [React](https://react.dev/) front
 
 ## Build
 
-Simply donwload this repository and install all dependencies.
+Simply download this repository and install all dependencies.
 
 ```bash
 npm install
