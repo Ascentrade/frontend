@@ -11,6 +11,7 @@
 		"disclaimer-body2":"Please note that trading financial instruments such as stocks, cryptocurrencies, derivatives, or other securities carries significant risks. These include market fluctuations, liquidity issues, and the potential loss of your entire invested capital. Past performance does not guarantee future results.",
 		"disclaimer-body3":"While we strive to provide accurate and up-to-date information, we cannot guarantee the completeness, accuracy, or error-free nature of the data or analyses within the app. Additionally, technical or operational limitations may affect the user experience and decision-making process.",
 		"disclaimer-body4":"The responsibility for using the app and the decisions made as a result lies solely with the user. The provider of the app assumes no liability for financial losses or damages arising from the use or possible malfunction of the app. Always act responsibly and ensure you are fully informed before making financial decisions.",
-		"disclaimer-ack":"I understand the risk"
+		"disclaimer-ack":"I understand the risk",
+		"demo-text":"This instance of Ascentrade serves demonstration purposes only and is subject to change without further notice. We would be glad for constructive feedback to bring this project forward."
 	}
 }
