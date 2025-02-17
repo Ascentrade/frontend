@@ -20,7 +20,6 @@
  */
 
 // MUI & Toolpad
-import { Alert } from '@mui/material';
 import RadarIcon from '@mui/icons-material/Radar';
 import SearchIcon from '@mui/icons-material/Search';
 import DashboardIcon from '@mui/icons-material/Dashboard';
@@ -94,7 +93,6 @@ function App(props:any) {
 	return (
 		<AppProvider navigation={NAVIGATION} branding={BRANDING} theme={theme}>
 			<DisclaimerDialog />
-			<Alert severity="info">{t("demo-text")}</Alert>
 			<Outlet {...props}/>
 		</AppProvider>
 	)

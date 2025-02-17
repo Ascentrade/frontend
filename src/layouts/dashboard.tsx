@@ -26,14 +26,20 @@ import { DashboardLayout } from '@toolpad/core/DashboardLayout';
 import SidebarFooter from '../components/sidebar-footer';
 import ToolbarActions from '../components/toolbar-actions';
 import CustomAppTitle from '../components/custom-app-title';
+import { Alert } from '@mui/material';
+
+import { useTranslation } from 'react-i18next';
 
 export default function Layout() {
+	const { t } = useTranslation();
+
 	return (
 		<DashboardLayout slots={{
 			appTitle: CustomAppTitle,
 			toolbarActions: ToolbarActions,
 			sidebarFooter: SidebarFooter
 		}}>
+			<Alert severity="info">{t("demo-text")}</Alert>
 			<Outlet />
 		</DashboardLayout>
 	);
