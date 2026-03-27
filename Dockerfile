@@ -1,11 +1,12 @@
-FROM alpine:edge as builder
+FROM alpine:edge AS builder
 
 COPY . /src/
 WORKDIR /src/
 
+ENV VITE_GRAPHQL_URL=https://ascentrade.app/graphql
+
 RUN apk add --no-cache npm && \
     npm install && \
-    cp .env.template .env && \
     npm run build
 
 FROM caddy:alpine
