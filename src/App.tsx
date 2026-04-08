@@ -20,7 +20,7 @@
  */
 
 import { useQuery } from '@apollo/client/react'
-import { CandlestickChart, ChevronLeft, ChevronRight, Gauge, Loader2, Newspaper, X } from 'lucide-react'
+import { CandlestickChart, ChevronLeft, ChevronRight, Gauge, Loader2, Newspaper } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { GaugeChart } from './components/GaugeChart'
 import { StockChart } from './components/StockChart'
@@ -59,7 +59,6 @@ type HistoricalRow = {
   dmim?: number | string | null
 }
 
-type LegalPage = 'imprint' | 'privacy' | null
 type MobileTab = 'summary' | 'gauge' | 'chart'
 
 const toIsoDate = (date: Date): string => date.toISOString().slice(0, 10)
@@ -124,7 +123,6 @@ function App() {
   const todayIso = toIsoDate(new Date())
   const latestBusinessDate = getLatestBusinessDate(todayIso)
   const [selectedDate, setSelectedDate] = useState<string>(latestBusinessDate)
-  const [activeLegalPage, setActiveLegalPage] = useState<LegalPage>(null)
   const [activeMobileTab, setActiveMobileTab] = useState<MobileTab>('summary')
   const isOnLatestBusinessDay = selectedDate === latestBusinessDate
 
@@ -301,13 +299,23 @@ function App() {
         <footer className="sticky bottom-0 z-10 mt-3 flex shrink-0 items-center justify-center gap-4 border-t border-border/60 bg-background/95 py-2 text-xs text-slate-400 backdrop-blur-sm lg:static lg:border-t-0 lg:bg-transparent lg:py-0 lg:backdrop-blur-none">
           <span>Ascentrade {new Date().getFullYear()}</span>
           <span aria-hidden="true">|</span>
-          <button type="button" onClick={() => setActiveLegalPage('imprint')} className="hover:text-slate-300">
+          <a
+            href="https://dgit-services.de/impressum/"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-slate-300"
+          >
             Imprint
-          </button>
+          </a>
           <span aria-hidden="true">|</span>
-          <button type="button" onClick={() => setActiveLegalPage('privacy')} className="hover:text-slate-300">
+          <a
+            href="https://dgit-services.de/datenschutz/"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-slate-300"
+          >
             Privacy
-          </button>
+          </a>
           <span aria-hidden="true">|</span>
           <a
             href="https://github.com/Ascentrade"
@@ -319,60 +327,6 @@ function App() {
           </a>
         </footer>
       </div>
-      {activeLegalPage && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-background">
-          <div className="flex items-center justify-between border-b border-border px-4 py-3 md:px-6">
-            <h2 className="text-sm font-semibold text-foreground">
-              {activeLegalPage === 'imprint' ? 'Imprint' : 'Privacy'}
-            </h2>
-            <button
-              type="button"
-              onClick={() => setActiveLegalPage(null)}
-              className="rounded-md border border-border p-2 text-muted-foreground hover:bg-muted hover:text-foreground"
-              aria-label="Close legal page"
-            >
-              <X className="h-4 w-4" />
-            </button>
-          </div>
-          <div className="h-full overflow-y-auto px-4 py-6 md:px-8">
-            {activeLegalPage === 'imprint' ? (
-              <div className="mx-auto flex w-full max-w-3xl flex-col gap-6">
-                <section className="rounded-lg border border-border bg-card p-4 md:p-6">
-                  <h3 className="mb-2 text-base font-semibold text-foreground">Company Information</h3>
-                  <p className="text-sm leading-6 text-muted-foreground">
-                    This is placeholder imprint content. Replace this text with your legal company details, contact
-                    information, authorized representatives, and any required registration identifiers.
-                  </p>
-                </section>
-                <section className="rounded-lg border border-border bg-card p-4 md:p-6">
-                  <h3 className="mb-2 text-base font-semibold text-foreground">Legal Notes</h3>
-                  <p className="text-sm leading-6 text-muted-foreground">
-                    This is a second dummy section for the imprint page. You can add liability disclaimers, copyright
-                    statements, and jurisdiction details here.
-                  </p>
-                </section>
-              </div>
-            ) : (
-              <div className="mx-auto flex w-full max-w-3xl flex-col gap-6">
-                <section className="rounded-lg border border-border bg-card p-4 md:p-6">
-                  <h3 className="mb-2 text-base font-semibold text-foreground">Data Processing</h3>
-                  <p className="text-sm leading-6 text-muted-foreground">
-                    This is placeholder privacy content. Replace it with details about what personal data is collected,
-                    the purpose of processing, and the legal basis for handling user data.
-                  </p>
-                </section>
-                <section className="rounded-lg border border-border bg-card p-4 md:p-6">
-                  <h3 className="mb-2 text-base font-semibold text-foreground">User Rights</h3>
-                  <p className="text-sm leading-6 text-muted-foreground">
-                    This is a second dummy section for the privacy page. You can include retention periods, third-party
-                    data sharing information, and instructions for exercising data rights.
-                  </p>
-                </section>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
     </main>
   )
 }
