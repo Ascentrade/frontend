@@ -22,6 +22,7 @@
 import { useQuery } from '@apollo/client/react'
 import { CandlestickChart, ChevronLeft, ChevronRight, Gauge, Loader2, Newspaper } from 'lucide-react'
 import { useMemo, useState } from 'react'
+import { Disclaimer } from './components/Disclaimer'
 import { GaugeChart } from './components/GaugeChart'
 import { StockChart } from './components/StockChart'
 import {
@@ -119,7 +120,7 @@ const getSentimentLabel = (score: number): string => {
   return 'long'
 }
 
-function App() {
+function AppContent() {
   const todayIso = toIsoDate(new Date())
   const latestBusinessDate = getLatestBusinessDate(todayIso)
   const [selectedDate, setSelectedDate] = useState<string>(latestBusinessDate)
@@ -328,6 +329,14 @@ function App() {
         </footer>
       </div>
     </main>
+  )
+}
+
+function App() {
+  return (
+    <Disclaimer>
+      <AppContent />
+    </Disclaimer>
   )
 }
 
