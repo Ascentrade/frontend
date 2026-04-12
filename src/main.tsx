@@ -28,7 +28,7 @@ import App from './App.tsx'
 
 const client = new ApolloClient({
   link: new HttpLink({
-    uri: import.meta.env.VITE_GRAPHQL_URL ?? 'http://localhost:8001/graphql',
+    uri: import.meta.env.VITE_ASCENTRADE_BACKEND ?? 'http://localhost:8001/graphql',
   }),
   cache: new InMemoryCache(),
 })
