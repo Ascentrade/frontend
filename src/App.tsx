@@ -186,7 +186,10 @@ function AppContent() {
       </div>
 
       <div className="min-h-0 flex-1 rounded-md border border-border/80 bg-muted/20 p-3">
-        <h3 className="mb-2 text-sm font-medium text-muted-foreground">Market Summary</h3>
+        <h3 className="mb-2 text-sm font-medium text-muted-foreground">
+          <span className="lg:hidden">Summary</span>
+          <span className="hidden lg:inline">Market Summary</span>
+        </h3>
         <p className="min-h-0 max-h-full overflow-y-auto whitespace-pre-wrap text-sm leading-6">
           {formattedAiResponse ?? (isLoading ? 'Loading...' : 'No data available')}
         </p>
@@ -236,13 +239,13 @@ function AppContent() {
             <button
               type="button"
               onClick={() => setActiveMobileTab('summary')}
-              aria-label="Market Summary tab"
+              aria-label="Summary tab"
               className={`flex items-center justify-center gap-2 rounded-md px-3 py-2 text-sm transition-colors ${
                 activeMobileTab === 'summary' ? 'bg-muted text-foreground' : 'text-muted-foreground hover:bg-muted/60'
               }`}
             >
               <Newspaper className="h-4 w-4 shrink-0" />
-              {activeMobileTab === 'summary' && <span>Market Summary</span>}
+              {activeMobileTab === 'summary' && <span>Summary</span>}
             </button>
             <button
               type="button"
