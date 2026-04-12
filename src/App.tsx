@@ -326,6 +326,18 @@ function AppContent() {
           >
             GitHub
           </a>
+          <span aria-hidden="true">|</span>
+          <a
+            href={
+              import.meta.env.VITE_FEEDBACK_URL ??
+              'https://feedback.ascentrade.app'
+            }
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-slate-300"
+          >
+            Feedback
+          </a>
         </footer>
       </div>
     </main>
