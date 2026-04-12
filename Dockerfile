@@ -5,6 +5,7 @@ WORKDIR /src/
 
 RUN apk add --no-cache npm && \
     npm install && \
+    cp .env.template .env && \
     npm run build
 
 FROM caddy:alpine
