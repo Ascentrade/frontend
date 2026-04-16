@@ -163,7 +163,7 @@ function AppContent() {
   const sentimentLabel = getSentimentLabel(roundedGaugeScore)
 
   const renderMarketSummaryCard = () => (
-    <article className="flex h-full w-full min-h-0 flex-[2] flex-col rounded-lg border border-border bg-card p-4">
+    <article className="flex h-full w-full min-h-0 flex-[2] flex-col overflow-hidden rounded-lg border border-border bg-card p-4">
       <div className="mb-4 flex items-center justify-between">
         <button
           type="button"
@@ -185,12 +185,12 @@ function AppContent() {
         </button>
       </div>
 
-      <div className="min-h-0 flex-1 rounded-md border border-border/80 bg-muted/20 p-3">
+      <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-md border border-border/80 bg-muted/20 p-3">
         <h3 className="mb-2 text-sm font-medium text-muted-foreground">
           <span className="lg:hidden">Summary</span>
           <span className="hidden lg:inline">Market Summary</span>
         </h3>
-        <p className="min-h-0 max-h-full overflow-y-auto whitespace-pre-wrap text-sm leading-6">
+        <p className="min-h-0 flex-1 overflow-y-auto whitespace-pre-wrap break-words pr-1 text-sm leading-6">
           {formattedAiResponse ?? (isLoading ? 'Loading...' : 'No data available')}
         </p>
       </div>

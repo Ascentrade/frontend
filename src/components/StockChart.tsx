@@ -280,7 +280,7 @@ export function StockChart({ prices, height }: StockChartProps) {
     sma50.setData(sma50Data)
 
     const sma200 = chart.addSeries(LineSeries, {
-      color: '#f59e0b',
+      color: '#fdd835',
       lineWidth: 2,
       priceLineVisible: false,
       lastValueVisible: true,
@@ -403,11 +403,11 @@ export function StockChart({ prices, height }: StockChartProps) {
   return (
     <div className="relative h-full w-full">
       <div className="pointer-events-none absolute left-2 top-2 z-10 flex flex-col gap-1 rounded-md bg-background/70 px-2 py-1 text-[11px] font-medium text-foreground/90 backdrop-blur-sm">
-        <span>{`OPEN ${formatValue(legend.open)} HIGH ${formatValue(legend.high)} LOW ${formatValue(legend.low)} CLOSE ${formatValue(legend.close)}`}</span>
+        <span>{`O ${formatValue(legend.open)} H ${formatValue(legend.high)} L ${formatValue(legend.low)} C ${formatValue(legend.close)}`}</span>
         <span>
           <span className="text-[#a855f7]">{`EMA20 ${formatValue(legend.ema20)} `}</span>
           <span className="text-[#38bdf8]">{`SMA50 ${formatValue(legend.sma50)} `}</span>
-          <span className="text-[#f59e0b]">{`SMA200 ${formatValue(legend.sma200)}`}</span>
+          <span className="text-[#fdd835]">{`SMA200 ${formatValue(legend.sma200)}`}</span>
         </span>
         <span>
           <span className="text-[#38bdf8]">{`ADX ${formatValue(legend.adx)} `}</span>
