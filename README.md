@@ -6,8 +6,9 @@
 
 This is the [Vite](https://vitejs.dev) powered [React](https://react.dev/) frontend application for [Ascentrade](https://github.com/Ascentrade)!
 
+![Ascentrade Dashboard](docs/img/ascentrade-dashboard.png)
 
-## Build
+## Build & Run
 
 Simply download this repository and install all dependencies.
 
