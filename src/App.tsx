@@ -300,47 +300,48 @@ function AppContent() {
           </div>
         )}
 
-        <footer className="sticky bottom-0 z-10 mt-3 flex shrink-0 items-center justify-center gap-4 border-t border-border/60 bg-background/95 py-2 text-xs text-slate-400 backdrop-blur-sm lg:static lg:border-t-0 lg:bg-transparent lg:py-0 lg:backdrop-blur-none">
-          <span>Ascentrade {new Date().getFullYear()}</span>
-          <span aria-hidden="true">|</span>
-          <a
-            href="https://dgit-services.de/impressum/"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-slate-300"
-          >
-            Imprint
-          </a>
-          <span aria-hidden="true">|</span>
-          <a
-            href="https://dgit-services.de/datenschutz/"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-slate-300"
-          >
-            Privacy
-          </a>
-          <span aria-hidden="true">|</span>
-          <a
-            href="https://github.com/Ascentrade"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-slate-300"
-          >
-            GitHub
-          </a>
-          <span aria-hidden="true">|</span>
-          <a
-            href={
-              import.meta.env.VITE_FEEDBACK_URL ??
-              'https://feedback.ascentrade.app'
-            }
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-slate-300"
-          >
-            Feedback
-          </a>
+        <footer className="sticky bottom-0 z-10 mt-3 shrink-0 border-t border-border/60 bg-background/95 py-2 text-xs text-slate-400 backdrop-blur-sm lg:static lg:border-t-0 lg:bg-transparent lg:py-0 lg:backdrop-blur-none">
+          <div className="flex items-center justify-center gap-4">
+            <a
+              href="https://dgit-services.de/impressum/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-slate-300"
+            >
+              Imprint
+            </a>
+            <span aria-hidden="true">|</span>
+            <a
+              href="https://dgit-services.de/datenschutz/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-slate-300"
+            >
+              Privacy
+            </a>
+            <span aria-hidden="true">|</span>
+            <a
+              href="https://github.com/Ascentrade"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-slate-300"
+            >
+              GitHub
+            </a>
+            <span aria-hidden="true">|</span>
+            <a
+              href={
+                import.meta.env.VITE_FEEDBACK_URL ??
+                'https://feedback.ascentrade.app'
+              }
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-slate-300"
+            >
+              Feedback
+            </a>
+          </div>
+          <div className="mt-1 text-center">Ascentrade {new Date().getFullYear()}</div>
         </footer>
       </div>
     </main>
