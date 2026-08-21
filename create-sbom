@@ -1,0 +1,1 @@
+npx @cyclonedx/cyclonedx-npm --of JSON -o sbom.json
