@@ -3,15 +3,15 @@
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
   "version": 1,
-  "serialNumber": "urn:uuid:a1d0da6a-1ab8-4d70-aea8-c44382898fa3",
+  "serialNumber": "urn:uuid:fd652689-fc5e-40fe-be90-c6cb429ad0ff",
   "metadata": {
-    "timestamp": "2026-08-21T05:02:38.851Z",
+    "timestamp": "2026-09-03T11:50:53.548Z",
     "tools": {
       "components": [
         {
           "type": "application",
           "name": "npm",
-          "version": "9.2.0"
+          "version": "12.0.2"
         },
         {
           "type": "application",
@@ -5603,8 +5603,8 @@
     {
       "type": "library",
       "name": "nanoid",
-      "version": "3.3.16",
-      "bom-ref": "ascentrade-ai-frontend@0.0.0|nanoid@3.3.16",
+      "version": "3.3.18",
+      "bom-ref": "ascentrade-ai-frontend@0.0.0|nanoid@3.3.18",
       "author": "Andrey Sitnik",
       "description": "A tiny (116 bytes), secure URL-friendly unique string ID generator",
       "licenses": [
@@ -5615,7 +5615,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/nanoid@3.3.16",
+      "purl": "pkg:npm/nanoid@3.3.18",
       "externalReferences": [
         {
           "url": "git+https://github.com/ai/nanoid.git",
@@ -5633,12 +5633,12 @@
           "comment": "as detected from PackageJson property \"bugs.url\""
         },
         {
-          "url": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.16.tgz",
+          "url": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.18.tgz",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "6f394a4f2349efe2dd188230cbc8a316922a11022f69f6a157b798ca427c0af878d8474978e0e827a814257a5026f7a3d4175d1fc3aa4d764d13f29f6d602ef1"
+              "content": "0d38383096c631691f8ba55915d36ddbf71a31b432e0ebbe3a9fe1250bc611672755fa00d5003ec7344a033c3d8c3ebe19538e798aff98872e0d276e83a17afb"
             }
           ],
           "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
@@ -7823,8 +7823,8 @@
     {
       "type": "library",
       "name": "fast-uri",
-      "version": "3.1.5",
-      "bom-ref": "ascentrade-ai-frontend@0.0.0|fast-uri@3.1.5",
+      "version": "3.1.7",
+      "bom-ref": "ascentrade-ai-frontend@0.0.0|fast-uri@3.1.7",
       "author": "Vincent Le Goff",
       "description": "Dependency-free RFC 3986 URI toolbox",
       "scope": "optional",
@@ -7836,7 +7836,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/fast-uri@3.1.5",
+      "purl": "pkg:npm/fast-uri@3.1.7",
       "externalReferences": [
         {
           "url": "git+https://github.com/fastify/fast-uri.git",
@@ -7854,12 +7854,12 @@
           "comment": "as detected from PackageJson property \"bugs.url\""
         },
         {
-          "url": "https://registry.npmjs.org/fast-uri/-/fast-uri-3.1.5.tgz",
+          "url": "https://registry.npmjs.org/fast-uri/-/fast-uri-3.1.7.tgz",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "807c00d4ef4b0c870aba730a84e6d2fc78a6c2d7a13b59cf50408a02ee53a4a81a3b5f5f716125e1b96259ed635b1545bc85f3b498e34382fc5d0d4453d7fb27"
+              "content": "74ebd95738dd65dcfba6177dbfa8c26f0c6b056ddf2ba9fc45cd02b5d98ce1bba6ccc9f1cb005886ea61e89f35f51470fe4bbeacb6de9707ccba792dbb35551e"
             }
           ],
           "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
@@ -11128,8 +11128,8 @@
     {
       "type": "library",
       "name": "brace-expansion",
-      "version": "5.0.8",
-      "bom-ref": "ascentrade-ai-frontend@0.0.0|brace-expansion@5.0.8",
+      "version": "5.0.9",
+      "bom-ref": "ascentrade-ai-frontend@0.0.0|brace-expansion@5.0.9",
       "description": "Brace expansion as known from sh/bash",
       "licenses": [
         {
@@ -11139,7 +11139,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/brace-expansion@5.0.8",
+      "purl": "pkg:npm/brace-expansion@5.0.9",
       "externalReferences": [
         {
           "url": "git+https://github.com/juliangruber/brace-expansion.git",
@@ -11157,12 +11157,12 @@
           "comment": "as detected from PackageJson property \"bugs.url\""
         },
         {
-          "url": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-5.0.8.tgz",
+          "url": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-5.0.9.tgz",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "259c83caadc3e005227ca4cf381ec310b7fa5ec07759d3ee3710ada1bd6f1573ec49785d0221c1589fed27c1c073d687f3804afb924564b36424ac771bd93342"
+              "content": "49c43822ebc8105d533253fb66dfaf8c9ffff7394f6f64837315b13376e4f2ceade8619d27b28ed5d09c4e274e3c929e3d6df42c4ff6713ef00b23e1a3dfd6c6"
             }
           ],
           "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
@@ -23445,7 +23445,7 @@
       "ref": "ascentrade-ai-frontend@0.0.0|@cyclonedx/cyclonedx-npm@6.0.1|ajv@8.20.0",
       "dependsOn": [
         "ascentrade-ai-frontend@0.0.0|fast-deep-equal@3.1.3",
-        "ascentrade-ai-frontend@0.0.0|fast-uri@3.1.5",
+        "ascentrade-ai-frontend@0.0.0|fast-uri@3.1.7",
         "ascentrade-ai-frontend@0.0.0|@cyclonedx/cyclonedx-npm@6.0.1|json-schema-traverse@1.0.0",
         "ascentrade-ai-frontend@0.0.0|require-from-string@2.0.2"
       ]
@@ -23593,7 +23593,7 @@
     {
       "ref": "ascentrade-ai-frontend@0.0.0|postcss@8.5.25",
       "dependsOn": [
-        "ascentrade-ai-frontend@0.0.0|nanoid@3.3.16",
+        "ascentrade-ai-frontend@0.0.0|nanoid@3.3.18",
         "ascentrade-ai-frontend@0.0.0|picocolors@1.1.1",
         "ascentrade-ai-frontend@0.0.0|source-map-js@1.2.1"
       ]
@@ -23736,7 +23736,7 @@
       "ref": "ascentrade-ai-frontend@0.0.0|ajv-formats@3.0.1|ajv@8.20.0",
       "dependsOn": [
         "ascentrade-ai-frontend@0.0.0|fast-deep-equal@3.1.3",
-        "ascentrade-ai-frontend@0.0.0|fast-uri@3.1.5",
+        "ascentrade-ai-frontend@0.0.0|fast-uri@3.1.7",
         "ascentrade-ai-frontend@0.0.0|ajv-formats@3.0.1|json-schema-traverse@1.0.0",
         "ascentrade-ai-frontend@0.0.0|require-from-string@2.0.2"
       ]
@@ -24017,7 +24017,7 @@
     {
       "ref": "ascentrade-ai-frontend@0.0.0|minimatch@10.2.6",
       "dependsOn": [
-        "ascentrade-ai-frontend@0.0.0|brace-expansion@5.0.8"
+        "ascentrade-ai-frontend@0.0.0|brace-expansion@5.0.9"
       ]
     },
     {
@@ -24038,7 +24038,7 @@
       "ref": "ascentrade-ai-frontend@0.0.0|fancy-canvas@2.1.0"
     },
     {
-      "ref": "ascentrade-ai-frontend@0.0.0|nanoid@3.3.16"
+      "ref": "ascentrade-ai-frontend@0.0.0|nanoid@3.3.18"
     },
     {
       "ref": "ascentrade-ai-frontend@0.0.0|source-map-js@1.2.1"
@@ -24288,7 +24288,7 @@
       ]
     },
     {
-      "ref": "ascentrade-ai-frontend@0.0.0|fast-uri@3.1.5"
+      "ref": "ascentrade-ai-frontend@0.0.0|fast-uri@3.1.7"
     },
     {
       "ref": "ascentrade-ai-frontend@0.0.0|require-from-string@2.0.2"
@@ -24595,7 +24595,7 @@
       "ref": "ascentrade-ai-frontend@0.0.0|is-extglob@2.1.1"
     },
     {
-      "ref": "ascentrade-ai-frontend@0.0.0|brace-expansion@5.0.8",
+      "ref": "ascentrade-ai-frontend@0.0.0|brace-expansion@5.0.9",
       "dependsOn": [
         "ascentrade-ai-frontend@0.0.0|balanced-match@4.0.4"
       ]
